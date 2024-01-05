@@ -7,12 +7,17 @@
 }
 
 .Playlist input {
-  width: 60%; /* Increase the width */
-  height: 20px; /* Adjust as needed */
-  padding: 10px; /* Add some padding */
-  border-radius: 5px; /* Give it rounded corners */
-  border: 1px solid #ccc; /* Set the border color */
-  margin-bottom: 20px; /* Add a bottom margin */
+  width: 70%; /* Reduce the width to prevent touching the playlist title */
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1.5px solid #ccc;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700; /* Make the font weight similar to the search result header */
+  color: black; /* Change the color to match the search result header */
 }
 
 .Playlist-save {
