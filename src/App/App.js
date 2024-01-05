@@ -18,14 +18,29 @@ function App() {
     // Add more tracks as needed
   ]);
 
+  const [playlistURIs, setPlaylistURIs] = useState([]);
+
   const addTrack = (track) => {
     if (!playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
       setPlaylistTracks(prevTracks => [...prevTracks, track]);
+      setPlaylistURIs(prevURIs => [...prevURIs, track.uri]); // assuming track.uri exists
     }
   };
 
   const removeTrack = (track) => {
     setPlaylistTracks(prevTracks => prevTracks.filter(savedTrack => savedTrack.id !== track.id));
+    setPlaylistURIs(prevURIs => prevURIs.filter(uri => uri !== track.uri)); // assuming track.uri exists
+  };
+
+  const savePlaylist = () => {
+    console.log('Saving playlist');
+    console.log('Name:', playlistName);
+    console.log('URIs:', playlistURIs);
+  
+    // Reset the states
+    setPlaylistName('New Playlist');
+    setPlaylistTracks([]);
+    setPlaylistURIs([]);
   };
 
   return (
@@ -34,7 +49,7 @@ function App() {
       <SearchBar />
       <div className="SearchResultsContainer">
         <SearchResults searchResults={searchResults} onAdd={addTrack} />
-        <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} />
+        <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} onSave={savePlaylist} />
       </div>
     </div>
   );
