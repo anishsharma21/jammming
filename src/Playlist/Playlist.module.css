@@ -18,6 +18,13 @@
 .Playlist-save {
   width: 25%;
   height: 40px; /* Adjust as needed */
-  border-radius: 20px; /* Adjust as needed */
+  border-radius: 5px;
   margin-top: 20px;
+  background-color: black;
+  color: #1db954; /* Spotify green */
+  font-weight: bold;
+}
+
+.Playlist-save:hover {
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
 }
