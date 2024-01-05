@@ -3,8 +3,11 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
+import Spotify from '../Spotify/Spotify';
 
 function App() {
+
+  Spotify.getAccessToken();
 
   const [searchResults, setSearchResults] = useState([
     {id: '1', name: 'Track 1', artist: 'Artist 1', album: 'Album 1'},
