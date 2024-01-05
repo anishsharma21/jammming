@@ -7,6 +7,8 @@
 .SearchResultsHeader {
   text-align: center;
   font-size: 1.75em;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .SearchResults .placeholder {

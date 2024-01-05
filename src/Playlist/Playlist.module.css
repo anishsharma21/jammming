@@ -15,7 +15,7 @@
   font-size: 1.75em;
   text-align: center;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 700; /* Make the font weight similar to the search result header */
   color: black; /* Change the color to match the search result header */
 }
@@ -33,3 +33,4 @@
 .Playlist-save:hover {
   cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
 }
+
