@@ -1,4 +1,9 @@
 .SearchResults {
-    padding: 0;
-    margin: 0;
-  }
+  text-align: left; /* Change this to left */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.SearchResultsHeader {
+  text-align: center;
+}

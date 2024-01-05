@@ -1,11 +1,11 @@
 import React from 'react';
-import './SearchResults.module.css';
+import styles from './SearchResults.module.css';
 import TrackList from '../TrackList/TrackList';
 
 function SearchResults() {
   return (
-    <div className="SearchResults">
-      <h2>Results</h2>
+    <div className={styles.SearchResults}>
+      <h2 className={styles.SearchResultsHeader}>Results</h2> {/* Apply the new class here */}
       <TrackList />
     </div>
   );

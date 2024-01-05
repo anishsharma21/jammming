@@ -1,15 +1,13 @@
-.App {
+.App h1 {
   text-align: center;
 }
 
 .SearchResultsContainer {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; /* Adjust as needed */
-  margin: 0 auto; /* Center the container */
+  width: 100%;
 }
 
 .SearchResults, .Playlist {
-  flex: 1;
-  margin: 0 10px;
+  width: 48%; /* Adjust as needed to account for any padding/margin */
 }
