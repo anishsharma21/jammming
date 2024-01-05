@@ -7,7 +7,7 @@ import Playlist from '../Playlist/Playlist';
 function App() {
   return (
     <div className="App">
-      <h1>Jammming</h1>
+      <h1>Ja<span className="highlight">mmm</span>ing</h1>
       <SearchBar />
       <div className="SearchResultsContainer">
         <SearchResults />

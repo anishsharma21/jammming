@@ -7,3 +7,7 @@
 .SearchResultsHeader {
   text-align: center;
 }
+
+.SearchResults .placeholder {
+  height: 10px; /* Set this to the total height of the input field in the Playlist component, including padding and margin */
+}
