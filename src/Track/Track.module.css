@@ -1,0 +1,29 @@
+.TrackContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .TrackDetails {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .TrackName, .TrackInfo {
+    margin: 0;
+  }
+  
+  .TrackButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }

@@ -1,13 +1,13 @@
 import React from 'react';
-import './TrackList.module.css';
 import Track from '../Track/Track';
+import styles from './TrackList.module.css'; // Import the CSS module
 
-function TrackList() {
+function TrackList({ isInPlaylist }) {
   return (
-    <div className="TrackList">
-      <Track />
-      <Track />
-      <Track />
+    <div className={styles.TrackList}> {/* Use the styles in your JSX code */}
+      <Track isInPlaylist={isInPlaylist} />
+      <Track isInPlaylist={isInPlaylist} />
+      <Track isInPlaylist={isInPlaylist} />
     </div>
   );
 }

@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './Track.module.css';
 
-function Track() {
+function Track({ isInPlaylist }) {
   return (
-    <div className={styles.Track}>
-      <div className={styles.TrackInformation}>
-        <h3>Track Name</h3>
-        <p>Track Artist | Track Album</p>
+    <div className={styles.TrackContainer}>
+      <div className={styles.TrackDetails}>
+        <h3 className={styles.TrackName}>Track Name</h3>
+        <p className={styles.TrackInfo}>Track Artist | Track Album</p>
       </div>
-      <button className={styles.TrackAction}>+</button>
+      <button className={styles.TrackButton}>
+        {isInPlaylist ? '-' : '+'}
+      </button>
     </div>
   );
 }
