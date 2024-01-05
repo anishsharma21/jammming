@@ -6,6 +6,7 @@ import App from './App/App';
 // import TrackList from './TrackList/TrackList';
 // import SearchResults from './SearchResults/SearchResults';
 // import Playlist from './Playlist/Playlist';
+// import SearchBar from './SearchBar/SearchBar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
