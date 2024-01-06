@@ -39,14 +39,18 @@ function App() {
   };
 
   const savePlaylist = () => {
-    console.log('Saving playlist');
-    console.log('Name:', playlistName);
-    console.log('URIs:', playlistURIs);
+    const trackUris = playlistTracks.map(track => track.uri);
   
-    // Reset the states
-    setPlaylistName('New Playlist');
-    setPlaylistTracks([]);
-    setPlaylistURIs([]);
+    Spotify.getUser().then(userId => {
+      return Spotify.createPlaylist(userId, playlistName).then(playlistId => {
+        return Spotify.addTracksToPlaylist(userId, playlistId, trackUris);
+      });
+    }).then(() => {
+      console.log('Playlist saved to Spotify');
+      // Reset the states
+      setPlaylistName('New Playlist');
+      setPlaylistTracks([]);
+    });
   };
 
   return (
