@@ -1,0 +1,36 @@
+.TrackContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+.TrackDetails {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+  
+.TrackName {
+  margin: 0 0 10px 0; /* This adds a 10px margin to the bottom */
+}
+
+.TrackInfo {
+    margin: 10px 0 0 0; /* This adds a 10px margin to the top */
+}
+  
+.TrackButton {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: #1db954; /* Spotify green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+  
