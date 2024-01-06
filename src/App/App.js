@@ -11,7 +11,7 @@ function App() {
 
   const [searchResults, setSearchResults] = useState([]);
 
-  const [playlistName, setPlaylistName] = useState('My Playlist');
+  const [playlistName, setPlaylistName] = useState('Playlist Name');
   const [playlistTracks, setPlaylistTracks] = useState([
     // Add more tracks as needed
   ]);
