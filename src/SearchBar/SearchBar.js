@@ -1,21 +1,27 @@
 import React, { useState } from 'react';
 import styles from './SearchBar.module.css'; // Import the CSS module
 
-function SearchBar(props) { // Add props parameter
-  const [term, setTerm] = useState(''); // Add state for the search term
+function SearchBar(props) {
+  const [term, setTerm] = useState('');
 
-  const handleTermChange = event => { // Add a method to handle input changes
+  const handleTermChange = event => {
     setTerm(event.target.value);
   };
 
-  const search = event => { // Add a method to handle button click
+  const search = event => {
     props.onSearch(term);
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault();
+  };
+
+  const handleKeyPress = event => {
+    if (event.key === 'Enter') {
+      search(event);
+    }
   };
 
   return (
-    <div className={styles.SearchBar}> {/* Use the styles in your JSX code */}
-      <input placeholder="Enter A Song, Album, or Artist" onChange={handleTermChange} />
+    <div className={styles.SearchBar}>
+      <input placeholder="Enter A Song, Album, or Artist" onChange={handleTermChange} onKeyPress={handleKeyPress} />
       <button className={styles.SearchButton} onClick={search}>SEARCH</button>
     </div>
   );
