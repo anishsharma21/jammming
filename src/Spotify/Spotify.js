@@ -2,12 +2,7 @@ let accessToken;
 
 const clientId = 'decfa5e608c543d1845ac6f12b7f0f5f'; // Replace with your client id
 
-let redirectUri;
-if (window.location.hostname === 'localhost') {
-  redirectUri = 'http://localhost:3000';
-} else {
-  redirectUri = 'https://anishsharma21.github.io/jammming/';
-}
+const redirectUri = process.env.NODE_ENV === 'production' ? 'https://anishsharma21.github.io/jammming/' : 'http://localhost:3000';
 
 const Spotify = {
   getAccessToken() {
