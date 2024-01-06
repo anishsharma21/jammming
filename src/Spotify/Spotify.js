@@ -11,6 +11,7 @@ if (window.location.hostname === 'localhost') {
 
 const Spotify = {
   getAccessToken() {
+    console.log('redirectUri:', redirectUri); // Add this line
     if (accessToken) {
       return accessToken;
     }
@@ -28,6 +29,7 @@ const Spotify = {
       return accessToken;
     } else {
       const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
+      console.log('accessUrl:', accessUrl); // Add this line
       window.location = accessUrl;
     }
   },
