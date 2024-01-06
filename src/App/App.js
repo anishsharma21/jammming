@@ -17,6 +17,7 @@ function App() {
     // Add more tracks as needed
   ]);
 
+  // eslint-disable-next-line no-unused-vars
   const [playlistURIs, setPlaylistURIs] = useState([]);
 
   // Add this line to the existing useState declarations
