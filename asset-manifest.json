@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jammming/static/css/main.7c1936e6.css",
-    "main.js": "/jammming/static/js/main.c52518e9.js",
+    "main.js": "/jammming/static/js/main.07a9c8c4.js",
     "static/js/787.07ba7306.chunk.js": "/jammming/static/js/787.07ba7306.chunk.js",
     "index.html": "/jammming/index.html",
     "main.7c1936e6.css.map": "/jammming/static/css/main.7c1936e6.css.map",
-    "main.c52518e9.js.map": "/jammming/static/js/main.c52518e9.js.map",
+    "main.07a9c8c4.js.map": "/jammming/static/js/main.07a9c8c4.js.map",
     "787.07ba7306.chunk.js.map": "/jammming/static/js/787.07ba7306.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c1936e6.css",
-    "static/js/main.c52518e9.js"
+    "static/js/main.07a9c8c4.js"
   ]
 }
