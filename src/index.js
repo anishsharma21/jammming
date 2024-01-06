@@ -7,6 +7,7 @@ import App from './App/App';
 // import SearchResults from './SearchResults/SearchResults';
 // import Playlist from './Playlist/Playlist';
 // import SearchBar from './SearchBar/SearchBar';
+// import LoadingScreen from './LoadingScreen/LoadingScreen';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
