@@ -33,4 +33,31 @@
   font-size: 24px;
 }
 
+.ArtistName, .AlbumName {
+  display: block; /* Make them display as block elements */
+}
+
+@media (max-width: 600px) {
+  .TrackContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .TrackDetails {
+    margin-right: 0;
+  }
+
+  .TrackName, .ArtistName {
+    font-size: 14px;
+  }
+
+  .AlbumName {
+    font-size: 12px; /* Make the album name font size smaller */
+  }
+
+  .TrackButton {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
   

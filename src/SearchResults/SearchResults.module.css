@@ -14,3 +14,9 @@
 .SearchResults .placeholder {
   height: 0px; /* Set this to the total height of the input field in the Playlist component, including padding and margin */
 }
+
+@media (max-width: 600px) {
+  .SearchResultsHeader {
+    font-size: 1.1em; /* Decrease the font size on small screens */
+  }
+}
